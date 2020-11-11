@@ -1,6 +1,6 @@
 # README
 
-- 最後更新時間: 2020-11-05
+- 最後更新時間: 2020-11-11
 - Repository Name: R-tools
 
 本專案收藏我所有的 Rcode，主要以專案的方式，收集我所寫過的所有 R 函數。  
@@ -16,7 +16,7 @@
 專案都會是一個一個的 repo，
 
 - 雲端管理的部分: 公司的專案放公司的 Gitlab，私人的專案(side project)就放 Github。  
-- local 端管理的部分: 公司的專案會放在公司的資料夾下，私人的專案(side project)就放 project 資料夾下。  
+- local 端管理的部分: 公司的專案會放在公司的資料夾下(NCHC/)，私人的專案(side project)就放 project/ 資料夾下。  
 
 因為 Git 是程式碼管理，所以盡可能不要涉及到大資料的部分，  
 而要學會把資料另外隔離，放到 DB or S3，除非是無機敏性的POC測試資料。

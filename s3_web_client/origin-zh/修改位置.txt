@@ -1,0 +1,13 @@
+## 修改 zh.json
+
+00: E:\NCHC\MOD_project\s3_web_client\filestash\client
+01: E:\NCHC\MOD_project\s3_web_client\web-apps\apps\spreadsheeteditor\mobile\locale
+02: E:\NCHC\MOD_project\s3_web_client\web-apps\apps\spreadsheeteditor\main\locale
+03: E:\NCHC\MOD_project\s3_web_client\web-apps\apps\spreadsheeteditor\embed\locale
+04: E:\NCHC\MOD_project\s3_web_client\web-apps\apps\presentationeditor\mobile\locale
+05: E:\NCHC\MOD_project\s3_web_client\web-apps\apps\presentationeditor\main\locale
+06: E:\NCHC\MOD_project\s3_web_client\web-apps\apps\presentationeditor\embed\locale
+07: E:\NCHC\MOD_project\s3_web_client\web-apps\apps\documenteditor\mobile\locale
+08: E:\NCHC\MOD_project\s3_web_client\web-apps\apps\documenteditor\main\locale
+09: E:\NCHC\MOD_project\s3_web_client\web-apps\apps\documenteditor\embed\locale
+10: E:\NCHC\MOD_project\s3_web_client\filestash\client\locales
