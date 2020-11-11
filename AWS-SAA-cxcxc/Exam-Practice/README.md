@@ -1,9 +1,9 @@
 # README
 
-最後更新時間: 2020-11-05
+最後更新時間: 2020-11-11
 
 收集雲育鏈上面的 AWS 證照考題，包括中文與英文，  
-然後再自己花時間做題目練習、解析，以及中英文對照。
+然後再自己花時間做題目練習、解析，以及中英文題號對照。
 
 上面有的證照考提包括
 
@@ -17,7 +17,10 @@
 ## 收集流程
 
 反正沒事就點一點手機。  
-正確的點法是先選「課程 or 證照類型」 > 選擇語言(點選作為 metadata 和 textdata 的分界，但其實有些不準) > 瘋狂點擊「考題練習」。
+正確的點法是先選「課程 or 證照類型」 > 選擇語言(點選作為 metadata 和 textdata 的分界，但其實有些不準) > 瘋狂點擊「考題練習」。  
+然後右上角的選單，匯出聊天紀錄。
+
+我的程式碼是依照這個操作方式做清理的。
 
 ---
 
@@ -28,7 +31,7 @@
 - data_original: 各種 LINE 對話的 txt 檔案 from 手機
 - data-format: 清理結果。
   - filename: [category]-[cht|eng]-[update datetime]
-  - table schema: [question, OptionA, OptionB, OptionC, OptionD, language, category, answer(目前沒有，需手動加入)]
+  - table schema: [question, OptionA, OptionB, OptionC, OptionD, language, category, language2, answer(目前沒有，需手動加入)]
 - dict
   - category: 證照類別
   - language: 語言
@@ -50,20 +53,21 @@
 - 有些題目的語系不對。就是設定改成英文了，但還是會出現中文的題目XD
 - 一些格式問題
   - 全形半形
-  - 選項樣式要統一。(這個很麻煩，我目前盡可能客製化全面清理了)
+  - 選項樣式要統一。(這個要解決很麻煩，我目前盡可能客製化全面清理了)
 
 ---
 
 ## 資料清理
 
 儲存方式就是用存成資料表，欄位設計如下:  
-[question, OptionA, OptionB, OptionC, OptionD, language, category, answer(目前沒有，需手動加入)]
+[question, OptionA, OptionB, OptionC, OptionD, language, category, language2, answer(目前沒有，需手動加入)]
 
 - language: cht, eng
 - category:
   - Solutions Architect - Associate(SAA-C02、助理架構師)
   - Developer – Associate(DVA-C01、雲端開發人員)
   - Cloud Practitioner(CLF-C01雲端從業人員)
+- language2: cht, eng
 
 在這樣的架構下，之後不管是要提取[語言:中文英文]，或是[不同證照:category]，都可以輕易 filter 出來。  
 

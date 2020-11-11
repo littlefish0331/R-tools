@@ -1,0 +1,84 @@
+question,optionA,optionB,optionC,optionD,language,category,language2
+下列哪一個是區域、可用區域、邊緣站點之間正確的關係?,(A) 資料中心包含區域,(B) 區域包含可用區域。,(C) 可用區域包含邊緣位置。,(D) 邊緣位置包含區域。,cht,CLF,cht
+"如果你想要在帳單金額超過特定的門檻時收到警報,需要使用何種AWS服務?",(A) Trusted Advisor,(B) Cloudwatch,(C) AWS Organizations,(D) AWS Budget,cht,CLF,cht
+"你正在建置線上的儲存平台,做為備份用途,用戶會將他們的文件上傳至你的應用程式。但你不確定每次上傳的容量大小,下列哪一項AWS服務可以幫助你解決這個問題?",(A) Elastic Block Store,(B) S3,(C) CloudWatch,(D) 將所有內容存放在CloudFront 快取內。,cht,CLF,cht
+"下列哪一個保留機定價模式,允許更改保留機的類型,以求換到相同價值甚至更好的保留機機型?",(A) 專用保留實例。,(B) 排程保留實例。,(C) 可轉換式保留實例。,(D) 標準保留實例。,cht,CLF,cht
+"要長期歸檔儲存,應該使用哪種AWS儲存方案?",(A) S3不常存取版,(B) S3 標準版,(C) Glacier,(D) S3 低冗余版,cht,CLF,cht
+"下列哪一個儲存方案,能夠讓資料庫備份能夠即時被存取,且為最低成本與穩定的方案?",(A) Amazon S3,(B) Amazon Glacier,(C) Amazon EBS,(D) Amazon EC2 實例儲存區,cht,CLF,cht
+"AWS的合規文件(例如: SOC 1 報告)位於何處,在哪可以找到?",(A) Amazon Inspector,(B) AWS CloudTrail,(C) AWS Artifact,(D) AWS Certificate Manager,cht,CLF,cht
+"Medium公司開始研究要如何將整個本地端的資料中心遷移至AWS上,但他們非常關切在AWS上運行整個IT基礎設施時,所需要的成本,你會推薦他們使用下列哪種工具,以便他們估算AWS的使用成本?",(A) AWS Cost Explorer,(B) AWS TCO Calculator,(C) AWS Estimate Calculator,(D) AWS Migration Cost Calculator,cht,CLF,cht
+"關於AWS,下列哪一個描述最為適合?",(A) AWS 是那個雲。,(B) AWS 是雲服務提供商。,(C) AWS 是線上零售商。,(D) 以上皆非。,cht,CLF,cht
+邊緣站點的特徵為何?,(A) 託管在靠近用戶的EC2實例,(B) 為用戶達到低延遲與增進效能,"(C) 緩存經常改變的資料,而不需跟原始資料點取用資料。",(D) 每日更新資料。,cht,CLF,cht
+下列哪一項服務可以提供近乎無限的容量而且又是高度耐用的物件儲存?,(A) Amazon Redshift,(B) Amazon Elastic File System (Amazon EFS),(C) Amazon Elastic Container Service (Amazon ECS),(D) Amazon S3,cht,CLF,cht
+"下列哪一項安全性服務,是可以免費使用的?",(A) 調用AWS支援服務,(B) 聯絡AWS專業服務以索取訓練工作坊。,(C) 存取論壇、部落格與白皮書。,(D) 去當地的大學上AWS相關課程。,cht,CLF,cht
+下列哪一個是AWS雲端多個區域的最佳範例?,(A) 敏捷,(B) 全球性架構,(C) 彈性,"(D) 用多少,付多少",cht,CLF,cht
+下列哪個AWS功能可以減少客戶的總成本(TCO)?,(A) 共享安全責任,(B) 單體設備,(C) 彈性計算,(D) 加密,cht,CLF,cht
+"下列哪一項服務,對於儲存物件時,可以提供即時存取、版本控制及生命週期的功能?",(A) Amazon Glacier,(B) AWS Storage Gateway,(C) Amazon S3,(D) Amazon EBS,cht,CLF,cht
+"如果你正在使用隨需的EC2執行個體,你要如何為這個使用行為做付費?","(A) 你必須購置一份一年或三年的合約,且一次付清。","(B) 基於以小時計算的費率,按秒計費,另外不會收取刪除費用。","(C) 基於以小時計算的費率,按秒計費,另外會收取刪除費用。","(D) 你會按照小時計費,並且付部分費用。",cht,CLF,cht
+"下列哪項AWS IAM功能,可以使開發人員透過AWS CLI存取AWS的服務?",(A) API 金鑰,(B) 存取金鑰,(C) 用戶帳號密碼,(D) SSH 金鑰,cht,CLF,cht
+"你所在組織的技術長(CTO),希望可以快速查看在AWS上有關安全性的漏洞、成本及效能方面,下列哪個AWS服務可以為你提供幫助?",(A) CloudWatch,(B) CloudTrail,(C) Trusted Advisor,(D) Security Groups,cht,CLF,cht
+"應該在多少個可用區域中分配運算資源,才足以實現高可用性?",(A) 最少一個,(B) 最少兩個,(C) 最少三個,(D) 最少四個或更多,cht,CLF,cht
+"在AWS的共同責任模型下,下列哪一項是客戶的責任?",(A) 確保磁碟驅動在使用後被清除。,(B) 確保在硬件設備上更新固件。,(C) 確保靜態數據已加密。,(D) 確保網線為六類或更高類別。,cht,CLF,cht
+"下列哪一項服務,可以幫助你做物件緩存?",(A) CloudTrail,(B) EC2,(C) CloudFront,(D) AWS Lambda,cht,CLF,cht
+下列哪一項是亞馬遜關聯式資料庫(Amazon RDS)的優勢?,(A) 簡化了關連式資料庫的管理任務。,(B) 提供了99.99999999999% 可靠與耐久性。,(C) 自動擴展資料庫的負載。,(D) 讓用戶可以動態調整CPU與記憶體資源。,cht,CLF,cht
+"下列哪個方法對於轉檔大量的單個影音檔案,是最符合AWS的架構原則?",(A) 平行使用多台實例。,"(B) 在低谷時間段,使用一台大型實例。",(C) 使用專用的硬體。,(D) 使用大型GPU實例類型。,cht,CLF,cht
+SNS支援下列哪一項端點服務?,(A) 簡訊服務,(B) 檔案傳輸協定,(C) 簡易儲存服務,(D) 來電通知,cht,CLF,cht
+"根據AWS的共同責任模型,AWS的客戶應該要負起什麼責任?",(A) 物理存取控制,(B) 資料加密,(C) 安全的儲存設備處理辦法,(D) 環境風險管理,cht,CLF,cht
+"下列哪一種亞馬遜EC2執行個體定價模式,允許客戶使用已存在的伺服器綁定版的軟體授權?",(A) 競標實例,(B) 保留實例,(C) 專用主機,(D) 隨需實例,cht,CLF,cht
+"在AWS的共同責任模型中,下列哪一項是客戶自己要負責的?",(A) (A) 為基礎設施進行更新,(B) 物理安全,(C) 更新Amazon EC2實例,(D) 更新網絡基礎設施,cht,CLF,cht
+"與傳統資料中心及虛擬化資料中心相比,AWS具有:",(A) (A) 更大的可變成本和更大的前期成本。,(B) 固定使用成本和較低的前期成本。,(C) 較低的可變成本和較高的前期成本。,(D) 降低可變成本並降低前期成本。,cht,CLF,cht
+下列哪一個是AWS的無伺服器運算服務?,(A) EC2,(B) Lambda,(C) S3,(D) RDS,cht,CLF,cht
+"下列哪一項服務,透過持續監控及記錄帳戶活動(包括AWS管理控制台及AWS開發工具包的用戶操作),以啟用風險稽核?",(A) Amazon CloudWatch,(B) AWS CloudTrail,(C) AWS Config,(D) AWS Health,cht,CLF,cht
+"下列哪一個AWS團隊,可以協助任何一項專業產業領域當中的客戶,只要付費並立約後,即可協助其加速採用雲端?",(A) AWS 企業支持,(B) AWS 解決方案架構師,(C) AWS 職業級服務,(D) AWS 帳務經理,cht,CLF,cht
+下列哪一個是AWS雲端中最佳的敏捷式範例?,(A) 存取多種實例類型。,(B) 存取管理服務。,"(C) 使用綜合帳單功能,歸併成一張帳單。",(D) 減少新計算資源的獲取時間,cht,CLF,cht
+下列哪一項是最快速且可靠的NoSQL資料庫服務?,(A) Amazon Redshift,(B) Amazon RDS,(C) Amazon DynamoDB,(D) Amazon S3,cht,CLF,cht
+"你的公司技術長(CTO)要求你透過交談功能聯繫AWS支援服務,並詢問有關於EBS的相關指導,但當你打開AWS支援中心頁面,你卻看不到聯繫AWS支援服務的交談功能,在這裡是缺少了什麼?",(A) 對話功能僅能在企業版支援計劃中使用。,(B) 必須從基礎支援方案升級到開發者支援方案。,(C) 至少需要升級到商業版支援計劃。,(D) AWS支援並未提供對話功能。,cht,CLF,cht
+"某間公司正在尋找可擴展的資料倉儲方案,下列哪種AWS解決方案,可以滿足他們的需求?",(A) Amazon Simple Storage Service (Amazon S3),(B) Amazon DynamoDB,(C) Amazon Kinesis,(D) Amazon Redshift,cht,CLF,cht
+"某個客戶正在使用多個AWS帳戶,每個AWS帳戶帳單都是獨立的,該客戶要如何在不影響AWS資源的情況下,獲得使用越多、付費越少的折扣優勢呢?","(A) . 創建一個AWS全球帳號,並將所有的AWS資源移轉至該帳號。",(B) . 簽署三年的保留實例合約,(C) . 使用AWS Organization的合併帳單功能。,(D) . 簽署AWS企業支持計畫以取得容量的折扣。,cht,CLF,cht
+下列哪一項是AWS託管DNS的網頁服務?,(A) Amazon Route 53,(B) Amazon Neptune,(C) Amazon SageMaker,(D) Amazon Lightsail,cht,CLF,cht
+"下列哪一項AWS雲端功能,可以支援跨國企業對所有客戶達到低延遲的請求?",(A) 容錯,(B) 全球可用,"(C) 用多少,付多少",(D) 高可用,cht,CLF,cht
+"約翰在運行一個網站應用程式時,發現流量負載變化非常大,每天有幾個小時的流量特別高,但在其他時間流量卻很少。
+為了處理高流量的問題,約翰運行了高規格的伺服器,但這樣伺服器每天還是有非常多的閒置時間而未充分利用。
+下列哪一項AWS功能,可以讓約翰基於流量負載,新增或移除伺服器的數量?",(A) 寫腳本檢查工作負載並動態創建EC2實例,(B) 彈性負載平衡,(C) 自動擴展,"(D) 切換成Lambda服務,它會自動處理負載",cht,CLF,cht
+"在AWS全球性架構中,哪個組件其包含了以低延遲連結的一或多個物理位置分離的資料中心?",(A) 可用區域,(B) 邊緣位置,(C) 區域,(D) 私有網路,cht,CLF,cht
+"下列哪一個AWS雲端服務,可以使用戶運行且自行管理關聯式資料庫?",(A) Amazon EC2,(B) Amazon Route 53,(C) Amazon ElastiCache,(D) Amazon DynamoDB,cht,CLF,cht
+"下列哪一個保留機型的定價模式,相對隨需定價來看,節省了最多的費用?","(A) 一年,無前期費用,標準RI定價","(B) 一年,所有費用一次付清,可轉換RI定價","(C) 所有費用一次付清,標準RI定價","(D) 三年,不須先行墊付,可轉換RI定價",cht,CLF,cht
+"使用哪一個AWS功能或服務,可以讓公司追蹤及分類AWS帳戶的詳細支出?",(A) 成本分配標籤,(B) 合併帳單,(C) AWS 預算,(D) AWS Marketplace,cht,CLF,cht
+"在AWS的共同責任模型中,下列哪一項不是AWS應該要負責的?",(A) 伺服器的網路連結器。,(B) 顧客端的資料,(C) 管理程序,(D) 伺服器的物理安全考量,cht,CLF,cht
+"某間公司正在考慮要在AWS上自行管理資料庫,且該資料庫須於每晚關閉,進行維護並節省成本,該公司應該使用哪種服務?",(A) Amazon Redshift,(B) Amazon DynamoDB,(C) EC2並配置一個實例儲存空間。,(D) EC2並配置一個EBS。,cht,CLF,cht
+"下列哪一種亞馬遜EC2執行個體定價模式,可以提供高達90%的折扣?",(A) 保留實例,(B) 隨需,(C) 專用主機,(D) 競標實例,cht,CLF,cht
+"某個客戶想要在AWS雲端上建置一個新的工作負載,但公司內部沒有AWS相關軟體技術專長的人,該客戶可以透過下列哪一個AWS程序,達成這個目標?",(A) AWS網路技術合作夥伴。,(B) AWS Marketplace,(C) AWS網路顧問合作夥伴,(D) AWS Service Catalog,cht,CLF,cht
+"下列哪一個服務,可隨著網站流量增長而自動擴展?",(A) AWS CodePipeline,(B) Elastic Load Balancing,(C) Amazon EBS,(D) AWS Direct Connect,cht,CLF,cht
+"下列哪一項服務,可以讓你隔離各種其它AWS服務存取控制權限?",(A) AWS Lambda,(B) AWS Trusted Advisor,(C) IAM,(D) Passwords,cht,CLF,cht
+"如果你想深入瞭解如何創建和設定CloudTrail,你應該要在下列哪個AWS服務中查找?",(A) AWS論壇,(B) AWS白皮書,(C) AWS文件資料,(D) AWS支援,cht,CLF,cht
+"關於Elastic Load Balancing,下列哪一個描述最為適合?","(A) 透過域名服務,將域名轉換成 IP位置。",(B) 將應用流量分散至一或多台亞馬遜EC2實例上。,"(C) 在已連結的亞馬遜EC2實例上,搜集指標。","(D) 自動因應進來的流量,調整亞馬遜EC2實例的數量。",cht,CLF,cht
+"你帳戶中有10個S3儲存貯體,但其中5個無法再被使用,現在你假設它們被刪除了,但不知道是誰刪除它們的,也沒有人承擔任何責任,下列哪項AWS服務可以協助你進行調查?",(A) CloudWatch,(B) CloudTrail,(C) S3 Logs,(D) Lambda,cht,CLF,cht
+"讓運行在亞馬遜彈性運算雲端(Amazon EC2)上的網站伺服器,能夠訪問運行在企業本地端的舊有應用程式,可以用什麼專業名詞說明這個模式?",(A) 雲原生,(B) 合作夥伴社交圈,(C) 混合架構,(D) 架構服務化,cht,CLF,cht
+"下列哪一項可以查看AWS環境,並找出可以為用戶節省成本並改善系統效能的機會?",(A) AWS Cost Explorer,(B) AWS Trusted Advisor,(C) Consolidated billing,(D) Detailed billing,cht,CLF,cht
+"在S3的標準儲存類別中,其可用性及耐久性,分別為下列哪個?","(A) 99.999999999% 的耐久性,以及 99.99% 可用性","(B) 99.999999999% 的可用性,以及 99.99% 的耐久性","(C) 99.999999999% 的可用性,以及99.90%的耐久性",(D) 99.999999999% 耐久性 與 99.00% 可用性,cht,CLF,cht
+"下列哪一項,是由AWS與客戶彼此之間共同控管的?","(A) (A) 使用Amazon S3客戶端加密,並提供密鑰",(B) 為Amazon EC2實例做設定,(C) AWS數據中心的物理環境控制,(D) 培訓,cht,CLF,cht
+"下列哪一項支援服務,是所有AWS帳戶預設就有提供的?",(A) 商業支援服務,(B) 技術帳戶管理,(C) 企業支援服務,(D) 帳單支援服務,cht,CLF,cht
+"下列哪一項服務,可以幫助你在多個EC2執行個體之間平均分配流量負載?",(A) Auto-Scaling,(B) Route53,(C) Elastic Load Balancing,(D) CloudTrail,cht,CLF,cht
+"根據官方最佳的實踐作法中,要使一個應用程式在AWS雲端上運行,應該如何設計?",(A) 使用緊密耦合的組件。,(B) 使用鬆散耦合的組件。,(C) 使用不經常耦合的組件。,(D) 使用頻繁耦合的組件。,cht,CLF,cht
+S3服務可以儲存的最大資料量是多少?,(A) 每天最多5TB。,"(B) 每個帳號每天最多50TB,可以增加上限。",(C) 虛擬無限。,(D) 每天100GB。,cht,CLF,cht
+"可以使用下列哪種儲存服務,作為託管靜態網站的低成本選擇?",(A) Amazon Glacier,(B) Amazon DynamoDB,(C) Amazon Elastic File System (Amazon EFS),(D) Amazon Simple Storage Service (Amazon S3),cht,CLF,cht
+"選擇保留的執行個體,而不選擇隨需的執行個體,有什麼效益?","(A) 相對隨需而言,提供了更多免費的資源空間。",(B) 能夠透過更低的競標價格來節省費用。,"(C) 跟隨需比較起來,相對低成本。","(D) 跟隨需比較起來,並沒有什麼好處。",cht,CLF,cht
+"約翰是Medium公司的AWS解決方案架構師,最近有一個人加入了他的團隊,他需要授予新人存取權限,以便他與新人一起管理AWS基礎設施,那約翰要如何給予新人存取權限?",(A) 共享根帳戶憑證,"(B) 建立一個新的身分及存取管理服務使用者給新加入的人,並共享身分及存取管理服務使用者的憑證",(C) 共享存取權限及密鑰,"(D) 約翰可以共享他的憑證及,並且都可以使用同一組用戶及密碼",cht,CLF,cht
+"比較AWS雲端與本地端的總成本(TCO)時,需要考量哪些成本?",(A) 專案管理,(B) 防毒軟體版權,(C) 資料中心安全,(D) 軟體開發,cht,CLF,cht
+"下列哪一項功能,可以限制亞馬遜簡易儲存服務(Amazon S3)的儲存貯體,只能讓特定用戶可以存取?",(A) 一對公私金鑰,(B) Amazon Inspector,(C) AWS Identity and Access Management (IAM) policies,(D) Security Groups,cht,CLF,cht
+"下列哪一個審核流程,是由AWS全權負責?",(A) AWS IAM 政策,(B) 物理安全,(C) 亞馬遜 S3 存儲桶策略,(D) AWS CloudTrail 日誌,cht,CLF,cht
+運行Lambda的好處之一是什麼?,(A) 不需要使用伺服器來運行程式碼。,(B) 主動選擇與管理實例類型與容量。,(C) 可選擇非常多種的作業系統。,(D) 不需要去擔憂安全漏洞。,cht,CLF,cht
+"愛麗絲是一名DevOps,他希望確保所有的伺服器都能正常運行,其中一個方法是監控CPU的使用率,當CPU使用率大於60%時,應用程式就會越來越慢,愛麗絲要如何追蹤,任一EC2執行個體的CPU使用率是否超過60%?","(A) 在每台伺服器上安裝監控代理程序,其會在CPU使用率超過60%時,寄發警告。",(B) 透過CloudTrail去監控伺服器的使用率。,(C) 使用CloudWatch警告。,"(D) 使用CloudFront作緩存,故CPU永遠不會超過60%。",cht,CLF,cht
+客戶應該使用下列哪一項服務來整合和集中多個AWS帳戶?,(A) AWS IAM,(B) AWS Organizations,(C) AWS Schema Conversion Tool,(D) AWS Config,cht,CLF,cht
+"你有一個非常關鍵性的應用程式,你的組織根本就承擔不起它運作停止造成的損失,為了這個應用,你該準備什麼架構?",(A) 以多可用區域為基底的架構,(B) 以多區域為基底的架構,(C) 使用混合雲架構,"(D) 使用多雲架構,若任一雲中斷了,域名會自動轉換,且網站會從其他的雲服務商內還原。",cht,CLF,cht
+"在AWS上設計高可用性的架構,建議採取下列哪一種模式?",(A) 確保組件之間使用低延遲的網路連結。,(B) 在巔峰流量的時候運行足夠的亞馬遜 EC2 實例。,(C) 確保應用的設計能夠容納任何單點失效的可能性。,(D) 使用單體式應用來處理所有操作。,cht,CLF,cht
+"使用AWS命令列介面(AWS CLI)時,需要使用下列哪一項身分及存取管理(IAM)功能,來關聯存取金鑰匙身分及機密存取金鑰?",(A) IAM group,(B) IAM user,(C) IAM role,(D) IAM policy,cht,CLF,cht
+將本地基礎設施遷移至AWS雲端的優勢之一是:,(A) 允許企業減少帳單支出。,(B) 允許企業將伺服器放入客戶的資料中心內。,(C) 允許企業專注在商業活動上。,(D) 允許企業不用進行伺服器的更新。,cht,CLF,cht
+"有人選擇使用隨需的EC2執行個體,隨需執行個體主要的效益是什麼?",(A) 他們需要一兩天安裝與設定。,(B) 你可以在任何時間創造、開啟、關閉與刪除它們。,(C) 他們是最便宜的購買方案。,(D) 他們是最昂貴的購買方案。,cht,CLF,cht
+"使用AWS託管的服務,例如: 彈性快取(Amazon ElastiCache)及亞馬遜關聯式資料庫服務(Amazon RDS),有什麼好處呢?",(A) 他們需要消費者監控以及更換失效的實例。,"(B) 比起客戶自營的服務,他們擁有更好的效能。",(C) 他們簡化了補丁與更新作業系統的方式。,(D) 他們不需要客戶優化實例類型或大小選擇。,cht,CLF,cht
+"約翰想建置高可用性的基礎設施,他必須確保即使一個資料中心發生故障,也不會影響到他的應用程式,那他可以使用AWS雲端中的哪個組件,來達成這個應用案例?",(A) 可用區域,(B) 區域,"(C) 將應用存放至Lambda內,其是高可用服務。",(D) S3,cht,CLF,cht
+"將工作流程分散在多個可用區域上,這個行為是為了支持下列哪一個雲端架構設計原則?",(A) 自動化實作,(B) 敏捷式設計,(C) 容錯式設計,(D) 彈性實作,cht,CLF,cht
+"你所在組織的資安長(CISO),希望查看每個用戶在AWS帳戶中到底都在做什麼,那你可以使用哪一個服務,來實現這個場景?",(A) CloudWatch,(B) CloudTrail,(C) VPC,(D) SNS,cht,CLF,cht
+使用RDS取代自己在EC2執行個體中管理的資料庫有什麼效益? 下列哪一個是AWS 關聯式資料庫服務(RDS)的效益?,(A) RDS在成本運用上有效率。,(B) 自動更新與備份。,(C) AWS 為您管理資料庫。,"(D) RDS相較EC2來看,顯得比較快。",cht,CLF,cht
+下列哪種AWS服務可以幫助你防止分散式阻斷服務攻擊(DDOS)?,(A) VPC,(B) CloudWatch,(C) CloudFront,(D) Route53,cht,CLF,cht
+"某個客戶需要運行一個易於擴展的MySQL資料庫,他該使用下列哪個AWS服務?",(A) . Amazon Aurora,(B) . Amazon Redshift,(C) . Amazon DynamoDB,(D) . Amazon ElastiCache,cht,CLF,cht

@@ -26,4 +26,4 @@ convert_CN2tw <- function(path_target, path_dict){
 res <- convert_CN2tw(path_target = path_target, path_dict = path_dict)
 writeLines(text = res, con = "D:/zh.json", useBytes = T)
 
-
+# 程式只能跑一次，因為我的字典會有遞迴取代的問題出現!!(碼 -> 程式碼)
