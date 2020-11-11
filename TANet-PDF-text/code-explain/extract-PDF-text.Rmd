@@ -1,0 +1,136 @@
+---
+title: "extract-PDF-text"
+author: "Author: [You-Jun Yu](https://github.com/littlefish0331)"
+date: "`r Sys.setlocale('LC_TIME', 'English'); format(Sys.time(), '%Y %b %d %a, %H:%M:%S')`" 
+output:
+  rmdformats::readthedown:
+    css: style.css
+    self_contained: TRUE
+    thumbnails: FALSE
+    lightbox: TRUE
+    gallery: FALSE
+    highlight: tango #探戈橘
+    code_folding: show
+    toc_depth: 3
+---
+
+```{r setup, echo=TRUE, message=FALSE, warning=FALSE, results='hide'}
+rm(list = ls()); gc()
+library(knitr)
+library(kableExtra)
+library(dplyr)
+library(data.table)
+library(pdftools)
+knitr::opts_chunk$set(
+	# 這邊是針對所有chunk的設定
+	echo = TRUE,
+	message = FALSE,
+	warning = FALSE
+	# knitr.purl.inline = TRUE
+)
+```
+
+# all PDF files
+
+```{r}
+all_files <- list.files(path = "../TANet2020論文集/", pattern = "pdf$", full.names = T)
+```
+
+---
+
+## PDF 純文字
+
+- 優點: 快速提取所有文字
+  - 表格(O)
+  - 列點(O)
+  - 圖中文字(X): 這個如果真的要，需要用 OCR。
+- 缺點: 文章段落不連續
+  - 因為檔案是一行一行讀入，加上TANet的論文格式是直式兩排，所以會導致讀取的文字會有跨排讀入的問題。
+  - 就算想整理成奇數一類當成左排，偶數一類當成右排，也無法完善。因為還有字體大小與表格的問題，所以不能做這樣簡單的分類。
+
+```{r}
+tmp01 <- pdf_text(pdf = all_files[1])
+tmp01[1] %>% substring(., 1, 1000) %>% gsub(pattern = " +", " ", .) %>% cat
+tmp01[1] %>% substring(., 1, 1000) %>% gsub(pattern = " +", "---", .)
+```
+
+## PDF 表格位置與文字
+
+PDF 背後其實是一塊一塊的文字區塊，
+所以這種讀取方式是，返回文字區塊，以及裡面的內容。
+
+- width 寬
+- height 高
+- x 左上角的x錨點
+- y 左上角的y錨點
+- space: 不太清楚原本的作用是什麼，但我猜測是註記後面的文字段落是否原本在頭或尾有空格。
+- 在該區塊內的文字
+
+**嘗試做法:**
+
+- 思考透過排序(x,y)錨點的方式，但結果不太好
+- 利用 width, height, x, y
+  - 如果y和下一個y差太多，表示不同段
+  - 如果x+width=下一個x，表示同一行
+
+那最終資料清理的結果是希望同一行或是同一段的文字，
+能盡可能的連在一起。
+
+```{r}
+tmp01 <- pdf_data(pdf = all_files[1])
+tmp02 <- tmp01[[1]] %>% data.table()
+
+
+# ---
+next_x <- tmp02$width+tmp02$x
+diff_x <- c(0, (head(next_x, -1) - tmp02$x[-1])) %>% abs
+# diff_x %>% table #<=10就視為同一行
+# diff_x %>% table %>% plot(., type = "b")
+# diff_x %>% table %>% sort %>% rev
+
+diff_y = c(0, diff(tmp02$y)) %>% abs
+# diff_y %>% table() #<=16就視為同一段了。
+
+
+# ---
+tmp02[, `:=`(diff_x = diff_x,
+             diff_y = diff_y,
+             x_group = ifelse(diff_x<=10, 0, 1),
+             y_group = ifelse(diff_y<=16, 0, 1) )
+      ][, `:=`(xy_group = ifelse(tmp02$x_group==1 & tmp02$y_group==1, 
+                                 1, 0) %>% cumsum())]
+tmp03 <- tmp02[, .(text_group = paste0(text, collapse = "")), by = .(xy_group)]
+```
+
+---
+
+## PDF 資訊
+
+這我不需要
+
+```{r eval = F}
+pdf_info(pdf = all_files[1])
+```
+
+---
+
+## PDF 的大綱
+
+就是 PDF 左側的書籤。
+bookmark, toc
+
+```{r eval = F}
+tmp <- pdf_toc(pdf = all_files[1])
+```
+
+---
+
+## do loop
+
+see extract-PDF-text-forloop.R
+
+---
+
+## END
+
+
